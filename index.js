@@ -145,3 +145,18 @@ function pirminisSkaicius(a) {
     }
 }
 pirminisSkaicius(20);
+
+// 10.
+
+function telefonoNumeris(a){
+    let numeris = '';
+    if(typeof a === 'array' && a.length === 10 && typeof a[i] === 'number' && a > -1 && a < 10){
+        let numeris ='';
+        for(i = 0; i < a.length; i++){
+            numeris += a[i]
+        }
+        console.log(numeris)
+        return numeris;
+    }
+    console.log(numeris)
+}
