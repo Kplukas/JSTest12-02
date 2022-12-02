@@ -126,6 +126,22 @@ function lygineSuma(a, b) {
 }
 lygineSuma();
 // 9.
+
 function pirminisSkaicius(a) {
-    
+    let yraPirminis = true;
+    if (typeof a === 'number' && a > 1){
+        for (let i = 2; i < a; i++) {
+            if (a % i == 0) {
+                yraPirminis = false;
+                break;
+            }
+        }
+
+        if (yraPirminis) {
+            console.log(`${a} - sis skaicius yra pirminis`);
+        } else {
+            console.log(`${a} - sis skaicius nepirminis`);
+        }
+    }
 }
+pirminisSkaicius(20);
